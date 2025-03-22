@@ -35,7 +35,7 @@ const video = async (m, Matrix) => {
 
             const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
     
-            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: 'powered by joel' }, { quoted: m });
+            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: 'powered by BWM XMD DEVELOPER Sore254}, { quoted: m });
             await m.React("🇮🇳");
           } catch (err) {
             console.error('Error sending video:', err);
